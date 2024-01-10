@@ -284,3 +284,49 @@
 // }
 // let x = sumOddEven(10)
 // console.log(x);
+
+
+
+// fun19
+// function invertTime(H, M, S) {
+//     S += (M*60+H*3600)
+//     return S
+// }
+// let x = invertTime(0,6,40)
+// console.log(x);
+
+
+
+// fun20
+// function invertTime(H, M, S) {
+//     S += (M*60+H*3600)
+//     return S
+// }
+// function decTime(H, M, S) {
+//     let x = invertTime(H, M, S)
+//     x --;
+//     let str = ""
+//     H = Math.floor(x/3600)
+//     x = x % 3600
+//     M = Math.floor(x/60)
+//     S = x % 60
+//     console.log(H, M, S); 
+// }
+// decTime(2, 0, 0)
+
+
+
+// fun21
+function isLeapYear(Y) {
+    let x = Y
+    if ((x - (x % 100)) % 400 == 0) {
+        if (x % 4 == 0) {
+            console.log('Kabisa yili');
+        } else {
+            console.log("Kabisa yili emas");
+        }
+    } else {
+        console.log('Kabisa yili emas');
+    }
+}
+isLeapYear(2020)
